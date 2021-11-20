@@ -18,7 +18,37 @@ function inicio() {
   enlace1.appendChild(enlaceTexto);
   contenido.appendChild(enlace1);
 
-  //insertar
+  /**
+   * Insertar listas ordenadas o desordenadas.
+   * @param {Object} contenedor
+   * @param {String} tipo
+   * @param {Number} numElementos
+   * @param {String} textoBase
+   */
+  let milista = (
+    contenedor,
+    tipo = "ul",
+    numElementos = 1,
+    textoBase = "Estamos en la lista"
+  ) => {
+    //Comprobamos el tipo ol o ul
+    if (tipo === "ul" || tipo === "ol") {
+      let lista = document.createElement(tipo);
+      for (let i = 1; i <= numElementos; i++) {
+        let li = document.createElement("li");
+        let liTexto = document.createTextNode(textoBase + " " + i);
+        li.appendChild(liTexto);
+        lista.appendChild(li);
+        contenedor.appendChild(lista);
+      }
+    } else {
+      console.log("Error");
+    }
+  };
+
+  //Creo varias listas ordenadas y no ordenadas de prueba
+  milista(contenido, "ol", 5, "lista");
+  milista(contenido, "ul", 2);
 }
 
 // al cargar la página iniciamos la función init
