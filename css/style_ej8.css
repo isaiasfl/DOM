@@ -1,0 +1,23 @@
+.acordeon {
+  background-color: #fed130;
+  color: rgb(34, 31, 31);
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+.active,
+.acordeon:hover {
+  background-color: orange;
+}
+
+.panel {
+  padding: 0px 20px;
+  display: none;
+  background-color: cornsilk;
+  overflow: hidden; /*Ocultar texto si me paso de los márgenes*/
+}
