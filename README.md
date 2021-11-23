@@ -1,7 +1,30 @@
-#  ACCESO A LOS ELEMENTOS DEL DOM.
+#  ACCESO A LOS ELEMENTOS DEL DOM y uso de eventos.
 
 ## Párrafos, Enlaces y Listas 🚀🚩
 En estos ficheros vamos a acceder a los elementos del **DOM** desde ***JavaScript***.
+
+
+1) **DOM - Document Object Model**
+  
+  * Nodo Document
+  * DOMContentLoaded, defer
+  * Recorriendo el DOM	
+  * Manipulando el DOM	
+  * Propiedades de los nodos del DOM	
+  * Fragment.	
+  * Template HTML.	
+  * Modificar atributos y clases.	
+
+2) **EVENTOS:**
+
+* Flujos de eventos (burbuja y captura)	
+* Propagación:	
+* event.target	
+* Parar la Propagación:
+* Captura:
+* Delegación de Eventos:
+
+
 
 ### Requisitos 📋
 
